@@ -48,6 +48,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="B1n-TB-2Xd"/>
+                    <connections>
+                        <outlet property="ingredientTable" destination="9Po-DA-IR9" id="YAm-eM-TuD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eTi-iz-FW0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -56,7 +59,6 @@
         <!--Navigation Controller-->
         <scene sceneID="DPz-rN-ZMl">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fJi-kc-Tck" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="jv3-Uk-lSZ" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sbD-V0-ZoY">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -66,6 +68,7 @@
                         <segue destination="KX5-TW-tAW" kind="relationship" relationship="rootViewController" id="B5o-9Y-4HR"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fJi-kc-Tck" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3677" y="-451"/>
         </scene>
@@ -97,6 +100,9 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="onScanClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="sfR-Vi-7y0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ouG-ee-1ov">
                                 <rect key="frame" x="5" y="478.5" width="404" height="284.5"/>
@@ -106,6 +112,9 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" systemColor="systemPinkColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="onCuisineClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="jm1-7T-RBb"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I want to ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3TT-gM-OPV">
                                 <rect key="frame" x="154" y="98" width="106.5" height="26"/>
