@@ -12,9 +12,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        // ios
+        
+        // new commit - haha
     }
 // hi
 
+///hi
 }
 //this is a comment to  chekck if git is working
-
+//commit check

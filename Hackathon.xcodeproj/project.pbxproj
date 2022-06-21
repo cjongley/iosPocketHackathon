@@ -10,9 +10,12 @@
 		EECAE881286150380062975D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECAE880286150380062975D /* AppDelegate.swift */; };
 		EECAE883286150380062975D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECAE882286150380062975D /* SceneDelegate.swift */; };
 		EECAE885286150380062975D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECAE884286150380062975D /* ViewController.swift */; };
-		EECAE888286150380062975D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECAE886286150380062975D /* Main.storyboard */; };
 		EECAE88A2861503A0062975D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EECAE8892861503A0062975D /* Assets.xcassets */; };
 		EECAE88D2861503A0062975D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECAE88B2861503A0062975D /* LaunchScreen.storyboard */; };
+		EECAE89528615EA90062975D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECAE89428615EA90062975D /* Main.storyboard */; };
+		EECAE89728617A820062975D /* utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECAE89628617A820062975D /* utilities.swift */; };
+		EECAE8A3286193350062975D /* ChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECAE8A2286193350062975D /* ChoiceViewController.swift */; };
+		EECAE8A52861959C0062975D /* IngredientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECAE8A42861959C0062975D /* IngredientViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +23,13 @@
 		EECAE880286150380062975D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EECAE882286150380062975D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EECAE884286150380062975D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EECAE887286150380062975D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EECAE8892861503A0062975D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EECAE88C2861503A0062975D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EECAE88E2861503A0062975D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EECAE89428615EA90062975D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		EECAE89628617A820062975D /* utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utilities.swift; sourceTree = "<group>"; };
+		EECAE8A2286193350062975D /* ChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceViewController.swift; sourceTree = "<group>"; };
+		EECAE8A42861959C0062975D /* IngredientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,26 @@
 		EECAE87F286150380062975D /* Hackathon */ = {
 			isa = PBXGroup;
 			children = (
+				EECAE8A6286195A50062975D /* ViewController */,
+				EECAE89628617A820062975D /* utilities.swift */,
+				EECAE89428615EA90062975D /* Main.storyboard */,
 				EECAE880286150380062975D /* AppDelegate.swift */,
 				EECAE882286150380062975D /* SceneDelegate.swift */,
 				EECAE884286150380062975D /* ViewController.swift */,
-				EECAE886286150380062975D /* Main.storyboard */,
 				EECAE8892861503A0062975D /* Assets.xcassets */,
 				EECAE88B2861503A0062975D /* LaunchScreen.storyboard */,
 				EECAE88E2861503A0062975D /* Info.plist */,
 			);
 			path = Hackathon;
+			sourceTree = "<group>";
+		};
+		EECAE8A6286195A50062975D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EECAE8A42861959C0062975D /* IngredientViewController.swift */,
+				EECAE8A2286193350062975D /* ChoiceViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +113,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1310;
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					EECAE87C286150380062975D = {
 						CreatedOnToolsVersion = 13.1;
@@ -126,8 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EECAE88D2861503A0062975D /* LaunchScreen.storyboard in Resources */,
+				EECAE89528615EA90062975D /* Main.storyboard in Resources */,
 				EECAE88A2861503A0062975D /* Assets.xcassets in Resources */,
-				EECAE888286150380062975D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,21 +158,16 @@
 			files = (
 				EECAE885286150380062975D /* ViewController.swift in Sources */,
 				EECAE881286150380062975D /* AppDelegate.swift in Sources */,
+				EECAE89728617A820062975D /* utilities.swift in Sources */,
+				EECAE8A52861959C0062975D /* IngredientViewController.swift in Sources */,
 				EECAE883286150380062975D /* SceneDelegate.swift in Sources */,
+				EECAE8A3286193350062975D /* ChoiceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EECAE886286150380062975D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EECAE887286150380062975D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EECAE88B2861503A0062975D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,6 +302,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2LAWQKGV56;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Hackathon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -316,6 +330,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2LAWQKGV56;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Hackathon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
