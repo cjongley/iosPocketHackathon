@@ -14,6 +14,11 @@
 		EECAE88D2861503A0062975D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECAE88B2861503A0062975D /* LaunchScreen.storyboard */; };
 		EECAE89528615EA90062975D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECAE89428615EA90062975D /* Main.storyboard */; };
 		EECAE89728617A820062975D /* utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECAE89628617A820062975D /* utilities.swift */; };
+		EECAE89E286192540062975D /* ScanManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECAE89A286192540062975D /* ScanManager.swift */; };
+		EECAE8A0286192540062975D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECAE89C286192540062975D /* ContentView.swift */; };
+		EECAE8A1286192540062975D /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECAE89D286192540062975D /* CameraView.swift */; };
+		EECAE8A3286193350062975D /* ChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECAE8A2286193350062975D /* ChoiceViewController.swift */; };
+		EECAE8A52861959C0062975D /* IngredientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECAE8A42861959C0062975D /* IngredientViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		EECAE88E2861503A0062975D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EECAE89428615EA90062975D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		EECAE89628617A820062975D /* utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utilities.swift; sourceTree = "<group>"; };
+		EECAE89A286192540062975D /* ScanManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanManager.swift; sourceTree = "<group>"; };
+		EECAE89C286192540062975D /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EECAE89D286192540062975D /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		EECAE8A2286193350062975D /* ChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceViewController.swift; sourceTree = "<group>"; };
+		EECAE8A42861959C0062975D /* IngredientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +68,29 @@
 		EECAE87F286150380062975D /* Hackathon */ = {
 			isa = PBXGroup;
 			children = (
+				EECAE8A6286195A50062975D /* ViewController */,
 				EECAE89628617A820062975D /* utilities.swift */,
 				EECAE89428615EA90062975D /* Main.storyboard */,
 				EECAE880286150380062975D /* AppDelegate.swift */,
 				EECAE882286150380062975D /* SceneDelegate.swift */,
 				EECAE884286150380062975D /* ViewController.swift */,
+				EECAE89D286192540062975D /* CameraView.swift */,
+				EECAE89C286192540062975D /* ContentView.swift */,
+				EECAE89A286192540062975D /* ScanManager.swift */,
 				EECAE8892861503A0062975D /* Assets.xcassets */,
 				EECAE88B2861503A0062975D /* LaunchScreen.storyboard */,
 				EECAE88E2861503A0062975D /* Info.plist */,
 			);
 			path = Hackathon;
+			sourceTree = "<group>";
+		};
+		EECAE8A6286195A50062975D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EECAE8A42861959C0062975D /* IngredientViewController.swift */,
+				EECAE8A2286193350062975D /* ChoiceViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,8 +166,13 @@
 			files = (
 				EECAE885286150380062975D /* ViewController.swift in Sources */,
 				EECAE881286150380062975D /* AppDelegate.swift in Sources */,
+				EECAE8A0286192540062975D /* ContentView.swift in Sources */,
 				EECAE89728617A820062975D /* utilities.swift in Sources */,
+				EECAE8A52861959C0062975D /* IngredientViewController.swift in Sources */,
 				EECAE883286150380062975D /* SceneDelegate.swift in Sources */,
+				EECAE89E286192540062975D /* ScanManager.swift in Sources */,
+				EECAE8A1286192540062975D /* CameraView.swift in Sources */,
+				EECAE8A3286193350062975D /* ChoiceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
