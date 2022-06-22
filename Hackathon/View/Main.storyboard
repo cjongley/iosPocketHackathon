@@ -464,10 +464,10 @@
             </objects>
             <point key="canvasLocation" x="-617" y="-1347"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="1pm-cz-PhS">
             <objects>
-                <viewController id="iia-OI-rCB" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsViewController" id="iia-OI-rCB" customClass="SettingsViewController" customModule="Hackathon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Aep-2w-pw7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -491,42 +491,63 @@
                                         <rect key="frame" x="0.0" y="44" width="374" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nuts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUS-E4-LKh">
-                                                <rect key="frame" x="0.0" y="0.0" width="325" height="31"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="224" height="31"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="45g-fp-8BN">
-                                                <rect key="frame" x="325" y="0.0" width="51" height="31"/>
-                                            </switch>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="oGo-ZF-RFv">
+                                                <rect key="frame" x="224" y="0.0" width="150" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="X6W-Tz-VRG"/>
+                                                </constraints>
+                                                <segments>
+                                                    <segment title="Yes"/>
+                                                    <segment title="No"/>
+                                                </segments>
+                                            </segmentedControl>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="reQ-G5-s7y">
                                         <rect key="frame" x="0.0" y="95" width="374" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gluten" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="piP-Vu-iYv">
-                                                <rect key="frame" x="0.0" y="0.0" width="325" height="31"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="224" height="31"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ltn-ss-zBW">
-                                                <rect key="frame" x="325" y="0.0" width="51" height="31"/>
-                                            </switch>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="H3x-AF-4Dt">
+                                                <rect key="frame" x="224" y="0.0" width="150" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="UmO-1R-odH"/>
+                                                </constraints>
+                                                <segments>
+                                                    <segment title="Yes"/>
+                                                    <segment title="No"/>
+                                                </segments>
+                                            </segmentedControl>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y6A-ej-QHH">
                                         <rect key="frame" x="0.0" y="146" width="374" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lactose" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="218-Cq-Rbh">
-                                                <rect key="frame" x="0.0" y="0.0" width="325" height="31"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="224" height="31"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xBp-Ny-z0K">
-                                                <rect key="frame" x="325" y="0.0" width="51" height="31"/>
-                                            </switch>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rzZ-GN-4uc">
+                                                <rect key="frame" x="224" y="0.0" width="150" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="bKz-ks-of2"/>
+                                                </constraints>
+                                                <segments>
+                                                    <segment title="Yes"/>
+                                                    <segment title="No"/>
+                                                </segments>
+                                            </segmentedControl>
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tags" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JOB-01-vvK">
