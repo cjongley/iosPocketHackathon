@@ -20,16 +20,47 @@ class CuisineViewController: UIViewController {
             let toView = segue.destination as! RecipeViewController
             // Pass data to RecipeViewController
             toView.choiceSent = "British"
-            //Hide back button
-//            toView.navigationItem.setHidesBackButton(true, animated: true)
         }
-//        else if segue.identifier == "chooseBritish"{
-//            let toView = segue.destination as! RecipeViewController
-//            // Pass data to RecipeViewController
-//            toView.choiceSent = "British"
-//            //Hide back button
-//            toView.navigationItem.setHidesBackButton(true, animated: true)
-//        }
+        else if segue.identifier == "chooseChinese"{
+            let toView = segue.destination as! RecipeViewController
+            // Pass data to RecipeViewController
+            toView.choiceSent = "Chinese"
+        }
+        else if segue.identifier == "chooseItalian"{
+            let toView = segue.destination as! RecipeViewController
+            // Pass data to RecipeViewController
+            toView.choiceSent = "Itlian"
+        }
+        else if segue.identifier == "chooseJapanese"{
+            let toView = segue.destination as! RecipeViewController
+            // Pass data to RecipeViewController
+            toView.choiceSent = "Japanese"
+        }
+        else if segue.identifier == "chooseKorean"{
+            let toView = segue.destination as! RecipeViewController
+            // Pass data to RecipeViewController
+            toView.choiceSent = "Korean"
+        }
+        else if segue.identifier == "chooseMexican"{
+            let toView = segue.destination as! RecipeViewController
+            // Pass data to RecipeViewController
+            toView.choiceSent = "Mexican"
+        }
+        else if segue.identifier == "chooseVegetarian"{
+            let toView = segue.destination as! RecipeViewController
+            // Pass data to RecipeViewController
+            toView.choiceSent = "Vegetarian"
+        }
+        else if segue.identifier == "chooseSurpriseMe"{
+            let toView = segue.destination as! RecipeViewController
+            // Pass data to RecipeViewController
+            toView.choiceSent = "Surprise!!!"
+        }
+        else if segue.identifier == "chooseOther"{
+            let toView = segue.destination as! RecipeViewController
+            // Pass data to RecipeViewController
+            toView.choiceSent = "Hope you like it"
+        }
     }
 
     /*

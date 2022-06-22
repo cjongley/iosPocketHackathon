@@ -17,7 +17,6 @@ class RecipeViewController: UIViewController {
         super.viewDidLoad()
 
         cuisine.text = "\(choiceSent)"
-        // Do any additional setup after loading the view.
     }
     
 
