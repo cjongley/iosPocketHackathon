@@ -671,7 +671,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adI-2j-5LJ">
-                                <rect key="frame" x="173" y="108" width="68" height="26"/>
+                                <rect key="frame" x="173.5" y="108" width="67.5" height="25.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -683,19 +683,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iCm-bQ-u2v">
-                                <rect key="frame" x="30" y="204" width="354" height="150"/>
+                                <rect key="frame" x="30" y="203.5" width="354" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="O7j-0q-8fj"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hf3-ZH-bVr">
-                                <rect key="frame" x="25" y="379" width="112" height="30"/>
+                                <rect key="frame" x="25" y="378.5" width="112.5" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="----" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IbF-E5-iaj">
-                                <rect key="frame" x="25" y="434" width="369" height="20.5"/>
+                                <rect key="frame" x="25" y="433.5" width="369" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -712,40 +712,61 @@
                                     <action selector="newRecipeBtn:" destination="ILQ-ED-3uo" eventType="touchUpInside" id="iUH-lI-HPD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rR7-BK-oFF">
-                                <rect key="frame" x="150" y="812" width="114" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="rR7-BK-oFF" secondAttribute="height" multiplier="107:47" id="5wA-xt-buJ"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="smW-8E-2A4"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Go to Recipe">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="baseBackgroundColor" red="0.066666655239999997" green="0.066666655239999997" blue="0.066666655239999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="onClickGoToRecipeBtn:" destination="ILQ-ED-3uo" eventType="touchUpInside" id="u3K-bF-wTO"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IqT-qn-q88">
+                                <rect key="frame" x="20" y="824" width="364" height="38"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rR7-BK-oFF">
+                                        <rect key="frame" x="0.0" y="0.0" width="172" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="smW-8E-2A4"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Go to Recipe">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.066666655239999997" green="0.066666655239999997" blue="0.066666655239999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onClickGoToRecipeBtn:" destination="ILQ-ED-3uo" eventType="touchUpInside" id="u3K-bF-wTO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esP-aT-Mrp">
+                                        <rect key="frame" x="192" y="0.0" width="172" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="1qd-K6-A8P"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Share">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.066666655239999997" green="0.066666655239999997" blue="0.066666655239999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onClickGoToRecipeBtn:" destination="ILQ-ED-3uo" eventType="touchUpInside" id="TxY-sv-NtR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GMs-kW-nXd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="GMs-kW-nXd" firstAttribute="bottom" secondItem="rR7-BK-oFF" secondAttribute="bottom" id="2wv-pj-Ml1"/>
+                            <constraint firstItem="IqT-qn-q88" firstAttribute="leading" secondItem="GMs-kW-nXd" secondAttribute="leading" constant="20" id="BAE-9X-8c5"/>
                             <constraint firstItem="GMs-kW-nXd" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="IbF-E5-iaj" secondAttribute="bottom" constant="40" id="EH4-2L-iwV"/>
                             <constraint firstItem="MD6-Qx-DBr" firstAttribute="top" secondItem="GMs-kW-nXd" secondAttribute="top" constant="20" id="MYO-EB-Mn2"/>
                             <constraint firstItem="GMs-kW-nXd" firstAttribute="trailing" secondItem="iCm-bQ-u2v" secondAttribute="trailing" constant="30" id="OJ2-nk-tLi"/>
                             <constraint firstItem="adI-2j-5LJ" firstAttribute="centerX" secondItem="o73-dH-kjV" secondAttribute="centerX" id="XCb-Wp-dht"/>
                             <constraint firstItem="iCm-bQ-u2v" firstAttribute="top" secondItem="adI-2j-5LJ" secondAttribute="bottom" constant="70" id="XVg-LQ-hH6"/>
+                            <constraint firstItem="IqT-qn-q88" firstAttribute="centerX" secondItem="GMs-kW-nXd" secondAttribute="centerX" id="ZWy-1A-BOP"/>
                             <constraint firstItem="hf3-ZH-bVr" firstAttribute="top" secondItem="iCm-bQ-u2v" secondAttribute="bottom" constant="25" id="cOd-su-GxB"/>
                             <constraint firstItem="eoq-I0-4u5" firstAttribute="top" secondItem="GMs-kW-nXd" secondAttribute="top" constant="50" id="eRc-oa-DRn"/>
                             <constraint firstItem="GMs-kW-nXd" firstAttribute="trailing" secondItem="MD6-Qx-DBr" secondAttribute="trailing" constant="20" id="gZi-gt-MKQ"/>
                             <constraint firstItem="GMs-kW-nXd" firstAttribute="trailing" secondItem="IbF-E5-iaj" secondAttribute="trailing" constant="20" id="izE-Dj-RgA"/>
+                            <constraint firstItem="GMs-kW-nXd" firstAttribute="bottom" secondItem="IqT-qn-q88" secondAttribute="bottom" id="klU-Be-Q7a"/>
+                            <constraint firstItem="GMs-kW-nXd" firstAttribute="trailing" secondItem="IqT-qn-q88" secondAttribute="trailing" constant="30" id="kng-po-1ui"/>
                             <constraint firstItem="eoq-I0-4u5" firstAttribute="leading" secondItem="GMs-kW-nXd" secondAttribute="leading" constant="25" id="nsA-tv-5nj"/>
                             <constraint firstItem="hf3-ZH-bVr" firstAttribute="leading" secondItem="GMs-kW-nXd" secondAttribute="leading" constant="25" id="oeV-vu-Zn0"/>
                             <constraint firstItem="iCm-bQ-u2v" firstAttribute="leading" secondItem="GMs-kW-nXd" secondAttribute="leading" constant="30" id="rOC-e1-gXk"/>
-                            <constraint firstItem="rR7-BK-oFF" firstAttribute="centerX" secondItem="GMs-kW-nXd" secondAttribute="centerX" id="s7a-za-BF4"/>
                             <constraint firstItem="IbF-E5-iaj" firstAttribute="top" secondItem="hf3-ZH-bVr" secondAttribute="bottom" constant="25" id="v9I-0o-BbH"/>
                             <constraint firstItem="IbF-E5-iaj" firstAttribute="leading" secondItem="GMs-kW-nXd" secondAttribute="leading" constant="25" id="yGg-8z-IgD"/>
                             <constraint firstItem="adI-2j-5LJ" firstAttribute="top" secondItem="GMs-kW-nXd" secondAttribute="top" constant="20" id="zQw-Tq-uqj"/>
