@@ -12,28 +12,55 @@ class RecipeViewController: UIViewController {
     var choiceSent: String = ""
     var queryString: String = ""
     
-    @IBOutlet weak var cuisine: UILabel!
+    @IBOutlet weak var recipeTitleLbl: UILabel!
+    @IBOutlet weak var summaryRecipeLbl: UILabel!
+    @IBOutlet weak var recipeImage: UIImageView!
+    @IBAction func newRecipeBtn(_ sender: Any) {
+        getData()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        cuisine.text = "\(choiceSent)"
         getData()
+        recipeTitleLbl.text = ""
+        summaryRecipeLbl.numberOfLines = 0
+        
     }
     
     func searchTerms() -> String{
         choiceSent.lowercased()
     }
     
-    func getData() {
+    func getData(){
         let getUrl = "https://api.spoonacular.com/recipes/random?apiKey=\(APIKEY)&number=1&tags=\(searchTerms())"
         print(getUrl)
-        Networking.request(url: URL(string:getUrl), method: .get) { (result: Result<Welcome, Error>) in
-            print(result)
+        Networking.request(url: URL(string:getUrl), method: .get) { [weak self] (result: Result<Welcome, Error>) in
+            switch result{
+            case let .success(data):
+                let item = data.recipes?.first
+                DispatchQueue.main.async {
+                    self?.recipeTitleLbl.text = item?.title
+                    self?.summaryRecipeLbl.attributedText = item?.summary?.htmlToAttributedString
+                }
+                self?.setImage(string:item?.image! ?? "")
+            case .failure:
+                break
+            }
         }
     }
     
-    
+    func setImage(string:String){
+        Networking.downloadImage(url: string) {[weak self] result in
+            switch result{
+            case let .success(data):
+                DispatchQueue.main.async {
+                    self?.recipeImage.image = data
+                }
+            case .failure:
+                break
+            }
+        }
+    }
 
     /*
     // MARK: - Navigation

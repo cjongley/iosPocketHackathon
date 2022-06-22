@@ -12,6 +12,7 @@ final class Networking {
         case get = "GET"
     }
 
+    private static let imageCache = NSCache<NSString, UIImage>()
     /// Will fetch data from an `url` as long as the `generic T` conforms to a `Codable`
     /// - parameter url: String
     /// - parameter method: APIMethod
@@ -69,6 +70,27 @@ final class Networking {
             completion(.success(jsonData))
         } catch {
             completion(.failure(error))
+        }
+    }
+    public static func downloadImage(url: String, completion: @escaping (Result<UIImage, Error>) -> Void) {
+        guard let serviceUrl = URL(string: url) else {
+            completion(.failure(RequestError.invalidUrl))
+            return
+        }
+        if let cachedImage = imageCache.object(forKey: serviceUrl.absoluteString as NSString) {
+            completion(.success(cachedImage))
+        } else {
+            let session = URLSession.shared
+            session.dataTask(with: serviceUrl) { (data, response, error) in
+                if let data = data, let image = UIImage(data: data) {
+                    imageCache.setObject(image, forKey: serviceUrl.absoluteString as NSString)
+                    completion(.success(image))
+                } else if let error = error {
+                    completion(.failure(error))
+                } else {
+                    completion(.failure(RequestError.undefined))
+                }
+            }.resume()
         }
     }
 }

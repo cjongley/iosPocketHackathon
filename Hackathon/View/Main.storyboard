@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jv3-Uk-lSZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jv3-Uk-lSZ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -519,7 +519,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hf3-ZH-bVr">
-                                <rect key="frame" x="25" y="379" width="112.5" height="30"/>
+                                <rect key="frame" x="25" y="379" width="112" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -538,6 +538,9 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="newRecipeBtn:" destination="ILQ-ED-3uo" eventType="touchUpInside" id="iUH-lI-HPD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GMs-kW-nXd"/>
@@ -560,9 +563,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="967-te-U5s"/>
                     <connections>
-                        <outlet property="cuisine" destination="eoq-I0-4u5" id="InP-yl-k9O"/>
-                        <outlet property="recipeImage" destination="iCm-bQ-u2v" id="zSZ-WA-iac"/>
-                        <outlet property="recipeSummary" destination="IbF-E5-iaj" id="XRF-OA-SMK"/>
+                        <outlet property="recipeImage" destination="iCm-bQ-u2v" id="cC9-24-aAC"/>
+                        <outlet property="recipeTitleLbl" destination="eoq-I0-4u5" id="4HR-FT-ooX"/>
+                        <outlet property="summaryRecipeLbl" destination="IbF-E5-iaj" id="KOC-ps-PgS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pvx-YH-hk2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
