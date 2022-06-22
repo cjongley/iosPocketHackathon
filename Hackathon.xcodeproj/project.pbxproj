@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		086B337228629D960075377E /* CuisineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086B337128629D960075377E /* CuisineViewController.swift */; };
 		086B337428629E850075377E /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086B337328629E850075377E /* RecipeViewController.swift */; };
+		086B33792862C4010075377E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 086B33772862C4000075377E /* Model.xcdatamodeld */; };
+		086B337B2862C5180075377E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086B337A2862C5180075377E /* SettingsViewController.swift */; };
 		EECAE881286150380062975D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECAE880286150380062975D /* AppDelegate.swift */; };
 		EECAE883286150380062975D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECAE882286150380062975D /* SceneDelegate.swift */; };
 		EECAE885286150380062975D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECAE884286150380062975D /* ViewController.swift */; };
@@ -26,6 +28,8 @@
 /* Begin PBXFileReference section */
 		086B337128629D960075377E /* CuisineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuisineViewController.swift; sourceTree = "<group>"; };
 		086B337328629E850075377E /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
+		086B33782862C4010075377E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		086B337A2862C5180075377E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		EECAE87D286150380062975D /* Hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECAE880286150380062975D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EECAE882286150380062975D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +104,7 @@
 				EECAE8892861503A0062975D /* Assets.xcassets */,
 				EECAE88B2861503A0062975D /* LaunchScreen.storyboard */,
 				EECAE88E2861503A0062975D /* Info.plist */,
+				086B33772862C4000075377E /* Model.xcdatamodeld */,
 			);
 			path = Hackathon;
 			sourceTree = "<group>";
@@ -111,6 +116,7 @@
 				086B337328629E850075377E /* RecipeViewController.swift */,
 				EECAE8A42861959C0062975D /* IngredientViewController.swift */,
 				EECAE8A2286193350062975D /* ChoiceViewController.swift */,
+				086B337A2862C5180075377E /* SettingsViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -197,7 +203,9 @@
 				EECAE883286150380062975D /* SceneDelegate.swift in Sources */,
 				EEEB8ACC2862A50C008B51F1 /* RecipeData.swift in Sources */,
 				EECAE8A3286193350062975D /* ChoiceViewController.swift in Sources */,
+				086B337B2862C5180075377E /* SettingsViewController.swift in Sources */,
 				EEEB8AC82862A0F2008B51F1 /* Networking.swift in Sources */,
+				086B33792862C4010075377E /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +417,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		086B33772862C4000075377E /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				086B33782862C4010075377E /* Model.xcdatamodel */,
+			);
+			currentVersion = 086B33782862C4010075377E /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EECAE875286150380062975D /* Project object */;
 }
