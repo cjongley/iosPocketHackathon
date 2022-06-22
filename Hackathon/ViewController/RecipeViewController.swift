@@ -18,6 +18,9 @@ class RecipeViewController: UIViewController {
     @IBAction func newRecipeBtn(_ sender: Any) {
         getData()
     }
+    @IBAction func onClickGoToRecipeBtn(_ sender: Any) {
+        UIApplication.shared.open(URL(string: "")!, options: [:], completionHandler: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
