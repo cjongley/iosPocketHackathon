@@ -20,6 +20,7 @@
 		EECAE8A52861959C0062975D /* IngredientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECAE8A42861959C0062975D /* IngredientViewController.swift */; };
 		EEEB8AC82862A0F2008B51F1 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEB8AC72862A0F1008B51F1 /* Networking.swift */; };
 		EEEB8ACA2862A115008B51F1 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEB8AC92862A115008B51F1 /* RequestError.swift */; };
+		EEEB8ACC2862A50C008B51F1 /* RecipeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEB8ACB2862A50C008B51F1 /* RecipeData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		EECAE8A42861959C0062975D /* IngredientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientViewController.swift; sourceTree = "<group>"; };
 		EEEB8AC72862A0F1008B51F1 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		EEEB8AC92862A115008B51F1 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		EEEB8ACB2862A50C008B51F1 /* RecipeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		086B33762862A2B70075377E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EEEB8ACB2862A50C008B51F1 /* RecipeData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				086B337428629E850075377E /* RecipeViewController.swift in Sources */,
 				EECAE8A52861959C0062975D /* IngredientViewController.swift in Sources */,
 				EECAE883286150380062975D /* SceneDelegate.swift in Sources */,
+				EEEB8ACC2862A50C008B51F1 /* RecipeData.swift in Sources */,
 				EECAE8A3286193350062975D /* ChoiceViewController.swift in Sources */,
 				EEEB8AC82862A0F2008B51F1 /* Networking.swift in Sources */,
 			);

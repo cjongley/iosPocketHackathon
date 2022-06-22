@@ -10,6 +10,7 @@ import UIKit
 class RecipeViewController: UIViewController {
 
     var choiceSent: String = ""
+    var queryString: String = ""
     
     @IBOutlet weak var cuisine: UILabel!
     
@@ -17,7 +18,21 @@ class RecipeViewController: UIViewController {
         super.viewDidLoad()
 
         cuisine.text = "\(choiceSent)"
+        getData()
     }
+    
+    func searchTerms() -> String{
+        choiceSent.lowercased()
+    }
+    
+    func getData() {
+        let getUrl = "https://api.spoonacular.com/recipes/random?apiKey=\(APIKEY)&number=1&tags=\(searchTerms())"
+        print(getUrl)
+        Networking.request(url: URL(string:getUrl), method: .get) { (result: Result<Welcome, Error>) in
+            print(result)
+        }
+    }
+    
     
 
     /*

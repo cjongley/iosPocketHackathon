@@ -29,7 +29,7 @@ class CuisineViewController: UIViewController {
         else if segue.identifier == "chooseItalian"{
             let toView = segue.destination as! RecipeViewController
             // Pass data to RecipeViewController
-            toView.choiceSent = "Itlian"
+            toView.choiceSent = "Italian"
         }
         else if segue.identifier == "chooseJapanese"{
             let toView = segue.destination as! RecipeViewController
