@@ -16,6 +16,8 @@
 		EECAE89728617A820062975D /* utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECAE89628617A820062975D /* utilities.swift */; };
 		EECAE8A3286193350062975D /* ChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECAE8A2286193350062975D /* ChoiceViewController.swift */; };
 		EECAE8A52861959C0062975D /* IngredientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECAE8A42861959C0062975D /* IngredientViewController.swift */; };
+		EEEB8AC82862A0F2008B51F1 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEB8AC72862A0F1008B51F1 /* Networking.swift */; };
+		EEEB8ACA2862A115008B51F1 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEB8AC92862A115008B51F1 /* RequestError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		EECAE89628617A820062975D /* utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utilities.swift; sourceTree = "<group>"; };
 		EECAE8A2286193350062975D /* ChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceViewController.swift; sourceTree = "<group>"; };
 		EECAE8A42861959C0062975D /* IngredientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientViewController.swift; sourceTree = "<group>"; };
+		EEEB8AC72862A0F1008B51F1 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		EEEB8AC92862A115008B51F1 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 		EECAE87F286150380062975D /* Hackathon */ = {
 			isa = PBXGroup;
 			children = (
+				EEEB8AC72862A0F1008B51F1 /* Networking.swift */,
+				EEEB8AC92862A115008B51F1 /* RequestError.swift */,
 				EECAE8A6286195A50062975D /* ViewController */,
 				EECAE89628617A820062975D /* utilities.swift */,
 				EECAE89428615EA90062975D /* Main.storyboard */,
@@ -156,12 +162,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEEB8ACA2862A115008B51F1 /* RequestError.swift in Sources */,
 				EECAE885286150380062975D /* ViewController.swift in Sources */,
 				EECAE881286150380062975D /* AppDelegate.swift in Sources */,
 				EECAE89728617A820062975D /* utilities.swift in Sources */,
 				EECAE8A52861959C0062975D /* IngredientViewController.swift in Sources */,
 				EECAE883286150380062975D /* SceneDelegate.swift in Sources */,
 				EECAE8A3286193350062975D /* ChoiceViewController.swift in Sources */,
+				EEEB8AC82862A0F2008B51F1 /* Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
